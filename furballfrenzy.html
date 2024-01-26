@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Unity Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e0e2e1; /* Set background color for the entire page */
+            
+        }
+
+        header {
+            text-align: center;
+            padding: 10px; /* Increase padding for better appearance */
+            width: 100%;
+            background-color: #e0e2e1; /* Set background color for the header */
+           
+        }
+
+        img {
+            width: 200px; /* Reduce image size to 200px */
+            transition: transform 0.5s; /* Apply a smooth transition for the rotation */
+        }
+
+        iframe {
+            max-width: 100%; /* Make the iframe responsive */
+            width: 80%;
+            height: 600px;
+            border: none; /* Removes border around iframe */
+            transition: transform 0.5s; /* Apply a smooth transition for the rotation */
+        }
+
+        /* Media query for smaller screens or portrait orientation */
+        @media (max-width: 600px) {
+    
+
+            img, iframe {
+                width: 100%; /* Adjust width for smaller screens */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imageedit_16_9408386274.png" alt="furblallogo">
+    </header>
+
+    <iframe src="https://krypticus.github.io/furball-frenzy/"></iframe>
+
+</body>
+</html>
