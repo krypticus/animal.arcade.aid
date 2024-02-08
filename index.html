@@ -260,7 +260,7 @@ footer img {
         <p class="bold-center-text">Games</p>
         <div class="flex-container">
             <!-- Add your icons here -->
-            <a href="furballfrenzy.html"> <img src="furball.png" alt="Icon 1"></a>
+            <a id="game-link" href="furballfrenzy.html"> <img src="furball.png" alt="Icon 1"></a>
            <img src="coming soon.png" alt="Icon 2">
             <img src="coming soon.png" alt="Icon 3">
         </div>
@@ -285,4 +285,18 @@ footer img {
         <img src="gmail.png" alt="Footer Image 1">
         <img
         src="instaaa.png" alt="">
-        <img
+        <img>
+
+        <script>
+            window.onload = function() {
+                // Get the scale factor of the website
+                var scale = window.innerWidth / document.documentElement.clientWidth;
+        
+                // Disable the link if the scale factor is less than a certain threshold
+                if (scale < 1 || window.innerWidth <= 480) { // Change the threshold to 480px for mobile devices
+                    document.getElementById("game-link").removeAttribute("href");
+                }
+            };
+        </script>
+ </body>
+ </html>
