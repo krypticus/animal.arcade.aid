@@ -4,19 +4,50 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665955142085627"
     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="imageedit_5_8937327164-removebg-preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon"   href="imageedit_5_8937327164-removebg-preview.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <style>
+
+
+
+
         body {
+            background-color: #d4d4d4;
+        
+            padding-left: 100px;
+            padding-right: 90px;
             margin: 0;
-            padding: 0;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em; /* Increase font size for normal text */
         }
         
+        .slider-section {
+            text-align: center; /* Center-align the content */
+            background-color: #e0e2e1;
+            color: white; /* Change text color to white */
+        }
+
+        .carousel-item img {
+            max-width: 60%;
+            max-height: 60%; /* Set a maximum height to maintain aspect ratio */
+            margin: 0 auto; /* Center-align the image */
+        }
+     
+        /* Reduce the size of images in the slider */
+        .carousel-item img {
+            width: 80%; /* Adjust the width as needed */
+        }
 
         .container {
             width: 150px; 
@@ -24,6 +55,7 @@
         }
 
         header {
+           
             background-color: #e0e2e1;
             padding: 1%;
             text-align: left; /* Center-align the header text */
@@ -57,11 +89,9 @@
             background-color: #e0e2e1;
         }
 
-        a{
+        a {
             color: black;
-
-
-
+            text-decoration: none; /* Removed inline style, using CSS */
         }
 
         .flex-container {
@@ -107,18 +137,39 @@
             font-weight: bolder;
             font-size: 2em;
         }
-        footer img {
-            max-width: 25%;
-            height: auto;
-            display: inline-block;
-            margin: 20px; /* Add some margin between the images */
-        }
+
+        footer {
+    background-color: #e0e2e1;
+    padding: 5px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 25%;
+    height: auto;
+    display:inline-block;
+    margin: 20px; /* Add some margin between the images */
+    align-self: center;
+}
 
 
 
         @media only screen and (max-width: 768px) {
 
-            header{
+            footer img {
+                height: auto;
+               max-width: 70%;
+
+            }
+
+            body{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+        
+           
+            header {
                 text-align: center;
             }
 
@@ -145,15 +196,7 @@
             .section1 p:not(:first-child),
             .section3 p:not(:first-child) {
                 font-size: 1em;
-
             }
-
-            .section1 p:not(:first-child),
-        .section3 p:not(:first-child) {
-            font-size: 1em;
-        }
-
-
         }
 
         @media (max-width: 728px) {
@@ -166,75 +209,28 @@
             .section3 .image-section {
                 order: -1;
             }
-        }
 
-        /* Add the following styles for the footer */
-        footer {
-            background-color: #e0e2e1;
-            padding: 5px;
-            text-align: center;
-        }
+            /* Further decrease font size for normal text when scaled down */
+            .section1 p:not(:first-child),
+            .section3 p:not(:first-child) {
+                font-size: 0.9em;
+            }
+            .carousel-item img {
+             max-width: 100%; /* Set maximum width to 100% */
+             height: auto; /* Automatically adjust height to maintain aspect ratio */
+            }
 
-        footer img {
-            max-width: 55%;
-            height: auto;
-            display: inline-block;
-            margin: 20px; /* Add some margin between the images */
-        }
-
-        /* Increase font size for normal text in section 1 and 3 */
-        .section1 p:not(:first-child),
-        .section3 p:not(:first-child) {
-            font-size: 1.15em;
-        }
-
-        /* Add the following styles for the footer */
-footer {
-    background-color: #e0e2e1;
-    padding: 5px;
-    text-align: center;
-}
-
-footer img {
-    max-width: 25%;
-    height: auto;
-    display: inline-block;
-    margin: 20px; /* Add some margin between the images */
-}
-
-@media only screen and (max-width: 768px) {
+          
+          }
 
 
 
-    footer img {
-        max-width: 55%;
-    }
 
-    /* Decrease font size for normal text when scaled down */
-    .section1 p:not(:first-child),
-    .section3 p:not(:first-child) {
-        font-size: 1em;
-    }
-}
 
-@media (max-width: 728px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center; /* Center-align the content vertically */
-    }
 
-    .section1 .image-section,
-    .section3 .image-section {
-        order: -1;
-    }
 
-    /* Further decrease font size for normal text when scaled down */
-    .section1 p:not(:first-child),
-    .section3 p:not(:first-child) {
-        font-size: 0.9em;
-    }
-}
 
+        
     </style>
 </head>
 
@@ -243,6 +239,37 @@ footer img {
         <img src="logo.png" alt="Logo">
     </header>
 
+    <section class="slider-section">
+        <!-- Bootstrap Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <a href="bestdog4u.html"><img src="slider1.png" class="d-block w-100" alt="Image 1"></a>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <a href="noeat.html">  <img src="slider2.png" class="d-block w-100" alt="Image 2"></a>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <a href="top10charity.html"> <img src="slider3.png" class="d-block w-100" alt="Image 3"></a>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
     <section class="section1">
         <div class="flex-container">
             <div class="image-section">
@@ -250,29 +277,28 @@ footer img {
             </div>
             <div class="text-section">
                 <p><strong>Who Are We</strong></p>
-                <p>Arcade Animal Aid is an effort by Blur Labryth, an independent developer, to aid animals worldwide and allow those who cannot contribute directly to participate. We create enjoyable games that generate funds for charities such as <b> <a href="https://bestfriends.org/"  style="text-decoration: none;" >Best Friend Animal Society</a></b> and <b><a href="https://awionline.org/" style="text-decoration: none;" >Animal Welfare Institute</a></b>. All game profits are donated to these organizations 
-                    Our revenue is generated by the advertisements that are displayed within our games as well as through the purchases made within the game.<b> we do not ask for direct donations </b></p>
+                <p>Arcade Animal Aid is an effort by Blur Labryth, an independent developer, to aid animals worldwide and allow those who cannot contribute directly to participate. We create enjoyable games that generate funds for charities such as <b><a href="https://bestfriends.org/">Best Friend Animal Society</a></b> and <b><a href="https://awionline.org/">Animal Welfare Institute</a></b>. All game profits are donated to these organizations. Our revenue is generated by the advertisements that are displayed within our games as well as through the purchases made within the game. <b>We do not ask for direct donations.</b></p>
             </div>
         </div>
     </section>
 
     <section class="section2">
         <p class="bold-center-text">Games</p>
-        <div class="flex-container">
+        <div class="flex-container"> 
             <!-- Add your icons here -->
-            <a id="game-link" href="furballfrenzy.html"> <img src="furball.png" alt="Icon 1"></a>
-           <img src="coming soon.png" alt="Icon 2">
+            <a id="game-link" href="furballfrenzy.html"><img src="furball.png" alt="Icon 1"></a>
+            <img src="coming soon.png" alt="Icon 2">
             <img src="coming soon.png" alt="Icon 3">
         </div>
     </section>
+
+
 
     <section class="section3">
         <div class="flex-container">
             <div class="text-section">
                 <p><strong>What's Next</strong></p>
-                <p>We are pleased to announce that we are in the process of launching two new games, which will be available for download on Google Playstore and Apple Store. Additionally, we will be introducing exclusive web games and a surprise feature, which we hope our users will enjoy. We will keep you updated on the funds generated for donations through various social media platforms, including Instagram. Our collective effort will make the world a better place for animals, and we look forward to working together towards this goal.
-                    <i>Our platform is currently in its early stages and will soon be updated with new games and features. We encourage you to stick with us and join forces to help animals worldwide.</i>
-                </p>
+                <p>We are pleased to announce that we are in the process of launching two new games, which will be available for download on Google Playstore and Apple Store. Additionally, we will be introducing exclusive web games and a surprise feature, which we hope our users will enjoy. We will keep you updated on the funds generated for donations through various social media platforms, including Instagram. Our collective effort will make the world a better place for animals, and we look forward to working together towards this goal. <i>Our platform is currently in its early stages and will soon be updated with new games and features. We encourage you to stick with us and join forces to help animals worldwide.</i></p>
             </div>
             <div class="image-section">
                 <img src="image2.1.png" alt="Image 2">
@@ -283,12 +309,21 @@ footer img {
     <!-- Footer with two centered images -->
     <footer>
         <img src="gmail.png" alt="Footer Image 1">
-        <img
-        src="instaaa.png" alt="">
-        <img>
+        <img src="instaaa.png" alt="Footer Image 2">
+    </footer>
 
-        <script>
-            window.onload = function() {
+    <body>
+        <div class="ad-left"></div>
+        <div class="ad-right"></div>
+        <!-- Rest of your HTML content here -->
+    </body>
+    
+
+
+
+
+    <script>
+      window.onload = function() {
                 // Get the scale factor of the website
                 var scale = window.innerWidth / document.documentElement.clientWidth;
         
@@ -296,7 +331,45 @@ footer img {
                 if (scale < 1 || window.innerWidth <= 480) { // Change the threshold to 480px for mobile devices
                     document.getElementById("game-link").removeAttribute("href");
                 }
-            };
-        </script>
- </body>
- </html>
+            };  
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

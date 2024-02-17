@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665955142085627"
-    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Unity Game</title>
     <style>
         body {
+            margin: 20px; /* Add margin to create space around the content */
+            background-color: #e0e2e1; /* Set background color for the entire page */
+        }
+
+        .wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #e0e2e1; /* Set background color for the entire page */
-            
+            width: 80%; /* Set width to 80% */
+            margin: 0 auto; /* Center the wrapper horizontally */
         }
 
         header {
             text-align: center;
             padding: 10px; /* Increase padding for better appearance */
-            width: 100%;
             background-color: #e0e2e1; /* Set background color for the header */
-           
+            margin-bottom: 20px; /* Add margin to the bottom */
         }
 
         img {
@@ -33,30 +33,52 @@
 
         iframe {
             max-width: 100%; /* Make the iframe responsive */
-            width: 80%;
+            width: 100%; /* Set width to 100% */
             height: 600px;
             border: none; /* Removes border around iframe */
             transition: transform 0.5s; /* Apply a smooth transition for the rotation */
+            display: block; /* Initially show the iframe */
+        }
+
+        .message-container {
+            display: none; /* Initially hide the message container */
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         /* Media query for smaller screens or portrait orientation */
         @media (max-width: 600px) {
-    
-
-            img, iframe {
+            .wrapper {
                 width: 100%; /* Adjust width for smaller screens */
-                height: auto;
+            }
+
+            img {
+                display: none; /* Hide the image when screen is scaled down */
+            }
+
+            iframe {
+                display: none; /* Hide the iframe when screen is scaled down */
+            }
+
+            .message-container {
+                display: block; /* Show the message container */
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="imageedit_16_9408386274.png" alt="furblallogo">
-    </header>
+    <div class="wrapper">
+        <header>
+            <img src="imageedit_16_9408386274.png" alt="furblallogo">
+        </header>
 
-    <iframe src="https://krypticus.github.io/furball-frenzy/"></iframe>
+        <iframe src="https://krypticus.github.io/furball-frenzy/"></iframe>
+
+        <div class="message-container">
+            <p>This game is only for computers, laptops, and tablets.</p>
+        </div>
+    </div>
 
 </body>
 </html>
