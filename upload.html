@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 1.2em;
+            background-color: #DAFFAB;
+            padding: 0;
+        }
+
+        footer{
+            background-color: #DAFFAB;
+            padding: 20px;
+        }
+
+
+
+        header {
+            background-color: #DAFFAB;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header img {
+            max-height: 80px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-section {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-section {
+            width: 80%;
+        }
+
+        .text-section p:first-child {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .small-image{
+            max-width: 150px;
+            height: auto;
+        }
+
+        
+
+
+        @media only screen and (min-width: 768px) {
+            .flex-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .image-section {
+                width: 40%;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+
+            .text-section {
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            header img {
+                max-height: 60px;
+            }
+
+            .image-section, .text-section {
+                width: 90%;
+            }
+
+        
+
+            footer p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <a href="index.html"> <img src="logo.png" alt="Logo"></a>
+    </header>
+    <section>
+        <div class="flex-container">
+            <div class="image-section">
+                <img src="catt.png" alt="Image 1">
+            </div>
+            <div class="text-section">
+                <p><strong>Upload Your Game</strong></p>
+                <p>After uploading your game, you'll receive a certificate for your contributions and updates on revenue and charity donations. If you want to remove your game, simply <b>click here</b>, submit your game's name and password, and it'll be removed, no questions asked.</p>
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNsyTNyOKjJaWpKYT3dOSjsr3OtD-VVDnN2gTgYhKRy4G9rA/viewform?usp=sf_link"> <img class="small-image" src="Screenshot 2024-05-02 163551.png" alt="Small Image"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="flex-container">
+            <div class="text-section">
+                <p><strong>What's Next</strong></p>
+                <p>We are pleased to announce that we are in the process of launching two new games, which will be available for download on Google Playstore and Apple Store. Additionally, we will be introducing exclusive web games and a surprise feature, which we hope our users will enjoy. We will keep you updated on the funds generated for donations through various social media platforms, including Instagram. Our collective effort will make the world a better place for animals, and we look forward to working together towards this goal. <i>Our platform is currently in its early stages and will soon be updated with new games and features. We encourage you to stick with us and join forces to help animals worldwide.</i></p>
+            </div>
+            <div class="image-section">
+                <img src="dogg.png" alt="Image 2">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+
+
+    </footer>
+    
+</body>
+</html>
